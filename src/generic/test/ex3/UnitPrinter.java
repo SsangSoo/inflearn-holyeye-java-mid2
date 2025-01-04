@@ -5,10 +5,14 @@ import generic.test.ex3.unit.BioUnit;
 public class UnitPrinter {
 
     public static <T extends BioUnit> void printV1(Shuttle<T> shuttle) {
-        shuttle.showInfo();
+//        shuttle.showInfo();
+        T unit = shuttle.out();
+        System.out.println("이름 : " + unit.getName() + ", HP : " + unit.getHp());
     }
 
     public static void printV2(Shuttle<? extends BioUnit> shuttle) {
-        shuttle.showInfo();
+//        shuttle.showInfo();
+        BioUnit unit = shuttle.out();
+        System.out.println("이름 : " + unit.getName() + ", HP : " + unit.getHp());
     }
 }
