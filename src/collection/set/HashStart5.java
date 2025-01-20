@@ -32,7 +32,6 @@ public class HashStart5 {
         int searchValue = 9;
         boolean contains = contains(buckets, searchValue);
         System.out.println("buckets.contains(" + searchValue + ") = " + contains);
-
     }
 
 
