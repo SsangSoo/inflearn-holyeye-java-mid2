@@ -35,7 +35,6 @@ public class MyHashSetV2 {
         if(bucket.contains(value)) {
             return false;
         }
-
         bucket.add(value);
         size++;
         return true;
